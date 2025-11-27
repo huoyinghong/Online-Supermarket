@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="Online_Supermarket.Views.Admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <title></title>
+        <style>
+                * {
+                        font-family: STXihei;
+                }
+
+                #left {
+                        color: white;
+                        height: 850px;
+                        background-color: teal;
+                }
+
+                label {
+                        color: white;
+                }
+        </style>
+        <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-3" id="left">
+                                <div style="height: 120px">
+                                </div>
+                                <div class="p-2">
+                                        <div class="mb-3">
+                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <a href="#"><label>Products</label></a>
+                                        </div>
+                                        <div class="mb-3">
+                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <a href="#"><label>Products</label></a>
+                                        </div>
+                                        <div class="mb-3">
+                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <a href="#"><label>Supplier</label></a>
+                                        </div>
+                                        <div class="mb-3">
+                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <a href="#"><label>User</label></a>
+                                        </div>
+                                        <div class="mb-3">
+                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <a href="#"><label>Category </label>
+                                                </a>
+                                        </div>
+                                        <div class="mb-3">
+                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <a href="#"><label>Logout</label></a>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                        <div class="col-9">
+                                <form id="form1" runat="server">
+                                        <div>
+                                                <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                        </div>
+                                </form>
+                        </div>
+
+                </div>
+        </div>
+
+</body>
+</html>
