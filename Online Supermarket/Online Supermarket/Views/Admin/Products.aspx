@@ -6,7 +6,7 @@
         <div class="container-fluid">
                 <div class="row">
                         <div class="col">
-                                <h3 class="text-center">Products Management</h3>
+                                <h3 class="text-center">Product Management</h3>
                         </div>
                 </div>
                 <div class="row">
@@ -16,7 +16,7 @@
                                         <input type="text" autocomplete="off" class="form-control" />
                                 </div>
                                 <div class="mb-3">
-                                        <label for="" class="form-lable text-success">Supplier</label>
+                                        <label for="" class="form-lable text-success">Manufacturer Name</label>
                                         <asp:DropDownList ID="DropDownList2" runat="server" class="form-control"></asp:DropDownList>
                                 </div>
                                 <div class="mb-3">

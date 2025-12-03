@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="App_Data\SupermarketDb.mdf" />
+    <Content Include="App_Data\SupermarketDb_log.ldf">
+      <DependentUpon>SupermarketDb.mdf</DependentUpon>
+    </Content>
     <Content Include="Assets\Image\bill.png" />
     <Content Include="Assets\Image\clipboard.png" />
     <Content Include="Assets\Image\customer-feedback %281%29.png" />
@@ -120,7 +124,10 @@
     <Content Include="Assets\Lib\js\bootstrap.js" />
     <Content Include="Assets\Lib\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Admin\Categories.aspx" />
+    <Content Include="Views\Admin\Customer.aspx" />
     <Content Include="Views\Admin\Products.aspx" />
+    <Content Include="Views\Admin\Manufacturer.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -131,9 +138,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Admin\AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Admin\AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Admin\Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
@@ -141,6 +163,13 @@
     </Compile>
     <Compile Include="Views\Admin\Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Manufacturer.aspx.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Manufacturer.aspx.designer.cs">
+      <DependentUpon>Manufacturer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -183,7 +212,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Customer\" />
   </ItemGroup>

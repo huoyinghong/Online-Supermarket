@@ -13,5 +13,10 @@ namespace Online_Supermarket.Views
         {
 
         }
+
+        protected void LoginBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
