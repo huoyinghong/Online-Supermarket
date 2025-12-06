@@ -127,7 +127,7 @@
     <Content Include="Views\Admin\Categories.aspx" />
     <Content Include="Views\Admin\Customer.aspx" />
     <Content Include="Views\Admin\Products.aspx" />
-    <Content Include="Views\Admin\Manufacturer.aspx" />
+    <Content Include="Views\Admin\Manufactors.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -135,6 +135,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Functions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Admin\AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
@@ -164,12 +165,12 @@
     <Compile Include="Views\Admin\Products.aspx.designer.cs">
       <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\Admin\Manufacturer.aspx.cs">
-      <DependentUpon>Manufacturer.aspx</DependentUpon>
+    <Compile Include="Views\Admin\Manufactors.aspx.cs">
+      <DependentUpon>Manufactors.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\Admin\Manufacturer.aspx.designer.cs">
-      <DependentUpon>Manufacturer.aspx</DependentUpon>
+    <Compile Include="Views\Admin\Manufactors.aspx.designer.cs">
+      <DependentUpon>Manufactors.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -212,7 +213,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Views\Customer\" />
   </ItemGroup>
   <PropertyGroup>

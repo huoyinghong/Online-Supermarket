@@ -19,6 +19,7 @@
                 label {
                         color: white;
                 }
+
         </style>
         <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
         <asp:ContentPlaceHolder ID="head" runat="server">
