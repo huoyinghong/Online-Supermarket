@@ -42,13 +42,13 @@ namespace Online_Supermarket.Views.Admin
                 protected global::System.Web.UI.HtmlControls.HtmlInputText CusPhoneTb;
 
                 /// <summary>
-                /// CusAddressTb control.
+                /// CusPasswordTb control.
                 /// </summary>
                 /// <remarks>
                 /// Auto-generated field.
                 /// To modify move field declaration from designer file to code-behind file.
                 /// </remarks>
-                protected global::System.Web.UI.HtmlControls.HtmlInputText CusAddressTb;
+                protected global::System.Web.UI.HtmlControls.HtmlInputText CusPasswordTb;
 
                 /// <summary>
                 /// ErrMsg control.

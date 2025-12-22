@@ -112,9 +112,9 @@ namespace Online_Supermarket.Views.Admin
                                 }
                                 else
                                 {
-                                        string MName = MNameTb.Value;
-                                        string ProdNum = ProdNumTb.Value;
-                                        string Place = PlaceCb.SelectedItem.ToString();
+                                        //string MName = MNameTb.Value;
+                                        //string ProdNum = ProdNumTb.Value;
+                                        //string Place = PlaceCb.SelectedItem.ToString();
 
                                         string Query = "delete from ManufactorTb1 where ManufactId = {0}";
                                         Query = string.Format(Query, ManufactList.SelectedRow.Cells[1].Text);

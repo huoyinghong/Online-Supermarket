@@ -25,8 +25,8 @@
 
                                 </div>
                                 <div class="mb-3">
-                                        <label for="" class="form-lable text-success">Address</label>
-                                        <input type="text" autocomplete="off" runat="server" id="CusAddressTb" class="form-control" />
+                                        <label for="" class="form-lable text-success">Password</label>
+                                        <input type="text" autocomplete="off" runat="server" id="CusPasswordTb" class="form-control" />
                                 </div>
                                 <div class="row">
                                         <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>

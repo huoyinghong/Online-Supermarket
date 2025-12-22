@@ -26,14 +26,14 @@ namespace Online_Supermarket.Views.Admin
                         CustomerList.HeaderRow.Cells[2].Text = "Customer Name";
                         CustomerList.HeaderRow.Cells[3].Text = "Customer Email";
                         CustomerList.HeaderRow.Cells[4].Text = "Customer Phone";
-                        CustomerList.HeaderRow.Cells[5].Text = "Customer Address";
+                        CustomerList.HeaderRow.Cells[5].Text = "Customer Password";
                 }
 
                 protected void SaveBtn_Click(object sender, EventArgs e)
                 {
                         try
                         {
-                                if (CusNameTb.Value == "" || CusEmailTb.Value == "" || CusPhoneTb.Value == "" || CusAddressTb.Value == "")
+                                if (CusNameTb.Value == "" || CusEmailTb.Value == "" || CusPhoneTb.Value == "" || CusPasswordTb.Value == "")
                                 {
                                         ErrMsg.Text = "Missing information!";
                                 }
@@ -42,18 +42,18 @@ namespace Online_Supermarket.Views.Admin
                                         string CusName = CusNameTb.Value;
                                         string CusEmail = CusEmailTb.Value;
                                         string CusPhone = CusPhoneTb.Value;
-                                        string CusAddress = CusAddressTb.Value;
+                                        string CusPassword = CusPasswordTb.Value;
 
 
                                         string Query = "insert into CustomerTb1 values('{0}','{1}','{2}','{3}')";
-                                        Query = string.Format(Query, CusName, CusEmail, CusPhone, CusAddress);
+                                        Query = string.Format(Query, CusName, CusEmail, CusPhone, CusPassword);
                                         Con.SetData(Query);
                                         ShowCustomers();
                                         ErrMsg.Text = "Customer infomations has been added";
                                         CusNameTb.Value = "";
                                         CusEmailTb.Value = "";
                                         CusPhoneTb.Value = "";
-                                        CusAddressTb.Value = "";
+                                        CusPasswordTb.Value = "";
                                 }
                         }
                         catch (Exception ex)
@@ -68,7 +68,7 @@ namespace Online_Supermarket.Views.Admin
                         CusNameTb.Value = CustomerList.SelectedRow.Cells[2].Text;
                         CusEmailTb.Value = CustomerList.SelectedRow.Cells[3].Text;
                         CusPhoneTb.Value = CustomerList.SelectedRow.Cells[4].Text;
-                        CusAddressTb.Value = CustomerList.SelectedRow.Cells[5].Text;
+                        CusPasswordTb.Value = CustomerList.SelectedRow.Cells[5].Text;
 
 
                         if (CusNameTb.Value == "")
@@ -85,7 +85,7 @@ namespace Online_Supermarket.Views.Admin
                 {
                         try
                         {
-                                if (CusNameTb.Value == "" || CusEmailTb.Value == "" || CusPhoneTb.Value == "" || CusAddressTb.Value == "")
+                                if (CusNameTb.Value == "" || CusEmailTb.Value == "" || CusPhoneTb.Value == "" || CusPasswordTb.Value == "")
                                 {
                                         ErrMsg.Text = "Missing information!";
                                 }
@@ -94,18 +94,18 @@ namespace Online_Supermarket.Views.Admin
                                         string CusName = CusNameTb.Value;
                                         string CusEmail = CusEmailTb.Value;
                                         string CusPhone = CusPhoneTb.Value;
-                                        string CusAddress = CusAddressTb.Value;
+                                        string CusPassword = CusPasswordTb.Value;
 
 
-                                        string Query = "update CustomerTb1 set CustName = '{0}', CustEmail = '{1}', CustPhone = '{2}', CustAddress = '{3}' where CustId = {4}";
-                                        Query = string.Format(Query, CusName, CusEmail, CusPhone, CusAddress, CustomerList.SelectedRow.Cells[1].Text);
+                                        string Query = "update CustomerTb1 set CustName = '{0}', CustEmail = '{1}', CustPhone = '{2}', CustPassword = '{3}' where CustId = {4}";
+                                        Query = string.Format(Query, CusName, CusEmail, CusPhone, CusPassword, CustomerList.SelectedRow.Cells[1].Text);
                                         Con.SetData(Query);
                                         ShowCustomers();
                                         ErrMsg.Text = "Customer infomations has been updated";
                                         CusNameTb.Value = "";
                                         CusEmailTb.Value = "";
                                         CusPhoneTb.Value = "";
-                                        CusAddressTb.Value = "";
+                                        CusPasswordTb.Value = "";
                                 }
                         }
                         catch (Exception ex)
@@ -118,16 +118,16 @@ namespace Online_Supermarket.Views.Admin
                 {
                         try
                         {
-                                if (CusNameTb.Value == "" || CusEmailTb.Value == "" || CusPhoneTb.Value == "" || CusAddressTb.Value == "")
+                                if (CusNameTb.Value == "" || CusEmailTb.Value == "" || CusPhoneTb.Value == "" || CusPasswordTb.Value == "")
                                 {
                                         ErrMsg.Text = "Missing information!";
                                 }
                                 else
                                 {
-                                        string CusName = CusNameTb.Value;
-                                        string CusEmail = CusEmailTb.Value;
-                                        string CusPhone = CusPhoneTb.Value;
-                                        string CusAddress = CusAddressTb.Value;
+                                        //string CusName = CusNameTb.Value;
+                                        //string CusEmail = CusEmailTb.Value;
+                                        //string CusPhone = CusPhoneTb.Value;
+                                        //string CusPassword = CusPasswordTb.Value;
 
 
                                         string Query = "delete from CustomerTb1 where CustId = {0}";
@@ -138,7 +138,7 @@ namespace Online_Supermarket.Views.Admin
                                         CusNameTb.Value = "";
                                         CusEmailTb.Value = "";
                                         CusPhoneTb.Value = "";
-                                        CusAddressTb.Value = "";
+                                        CusPasswordTb.Value = "";
                                 }
                         }
                         catch (Exception ex)

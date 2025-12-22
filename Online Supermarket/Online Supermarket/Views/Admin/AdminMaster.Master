@@ -34,28 +34,24 @@
                                 <div class="p-2">
                                         <div class="mb-3">
                                                 <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
-                                                <a href="#"><label>Products</label></a>
+                                                <a href="../Admin/Products.aspx"><label>Products</label></a>
                                         </div>
                                         <div class="mb-3">
                                                 <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
-                                                <a href="#"><label>Products</label></a>
+                                                <a href="../Admin/Manufactors.aspx"><label>Manufacturer</label></a>
                                         </div>
                                         <div class="mb-3">
                                                 <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
-                                                <a href="#"><label>Manufacturer</label></a>
+                                                <a href="../Admin/Customer.aspx"><label>Customer</label></a>
                                         </div>
                                         <div class="mb-3">
                                                 <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
-                                                <a href="#"><label>User</label></a>
-                                        </div>
-                                        <div class="mb-3">
-                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
-                                                <a href="#"><label>Category </label>
+                                                <a href="../Admin/Categories.aspx"><label>Category </label>
                                                 </a>
                                         </div>
                                         <div class="mb-3">
                                                 <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
-                                                <a href="#"><label>Logout</label></a>
+                                                <a href="../Login.aspx"><label>Logout</label></a>
                                         </div>
                                 </div>
 
