@@ -43,7 +43,7 @@ namespace Online_Supermarket.Views
                                 {
                                         UName = UsernameTb.Value;
                                         User = Convert.ToInt32(dt.Rows[0][0].ToString());
-
+                                        Response.Redirect("Customer/Billing.aspx");
                                 }
                         }
                 }

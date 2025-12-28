@@ -34,7 +34,7 @@
                                                 <input type="password" placeholder="Password" autocomplete="off" class="form-control" runat="server" id="PasswordTb" />
                                         </div>
                                         <div class="mt-3 d-grid">
-                                                <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label>
+                                                <asp:Label runat="server" ID="ErrMsg" class="text-danger"></asp:Label><br/>
                                                 <asp:Button Text="Log in" runat="server" Class="btn-success btn" ID="LoginBtn" OnClick="LoginBtn_Click" />
                                         </div>
                                 </form>

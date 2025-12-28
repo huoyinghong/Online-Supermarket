@@ -30,27 +30,29 @@
                 <div class="row">
                         <div class="col-3" id="left">
                                 <div style="height: 120px">
+                                        <img src="../../Assets/Image/clipboard.png" id="logo" style="height: 80px; width: 80px"/>
                                 </div>
                                 <div class="p-2">
                                         <div class="mb-3">
-                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <img src="../../Assets/Image/groceries.png" style="height: 40px; width: 40px" />
                                                 <a href="../Admin/Products.aspx"><label>Products</label></a>
                                         </div>
                                         <div class="mb-3">
-                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <img src="../../Assets/Image/supplier.png" style="height: 40px; width: 40px" />
                                                 <a href="../Admin/Manufactors.aspx"><label>Manufacturer</label></a>
                                         </div>
                                         <div class="mb-3">
-                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <img src="../../Assets/Image/customer-feedback.png" style="height: 40px; width: 40px" />
                                                 <a href="../Admin/Customer.aspx"><label>Customer</label></a>
                                         </div>
                                         <div class="mb-3">
-                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <img src="../../Assets/Image/dashboard.png" style="height: 40px; width: 40px" />
                                                 <a href="../Admin/Categories.aspx"><label>Category </label>
                                                 </a>
                                         </div>
+                                        <div style="height: 400px"></div>
                                         <div class="mb-3">
-                                                <img src="../../Assets/Image/groceries.png" style="height: 20px; width: 20px" />
+                                                <img src="../../Assets/Image/logout (2).png" style="height: 40px; width: 40px" />
                                                 <a href="../Login.aspx"><label>Logout</label></a>
                                         </div>
                                 </div>

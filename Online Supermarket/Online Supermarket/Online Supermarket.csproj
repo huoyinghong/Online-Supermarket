@@ -128,6 +128,7 @@
     <Content Include="Views\Admin\Customer.aspx" />
     <Content Include="Views\Admin\Products.aspx" />
     <Content Include="Views\Admin\Manufactors.aspx" />
+    <Content Include="Views\Customer\Billing.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -171,6 +172,13 @@
     </Compile>
     <Compile Include="Views\Admin\Manufactors.aspx.designer.cs">
       <DependentUpon>Manufactors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Customer\Billing.aspx.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Customer\Billing.aspx.designer.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Customer\CustomerMaster.Master.cs">
       <DependentUpon>CustomerMaster.Master</DependentUpon>
