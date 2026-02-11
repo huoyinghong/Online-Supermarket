@@ -31,8 +31,8 @@ namespace Online_Supermarket.Views.Admin
                         ProductList.HeaderRow.Cells[2].Text = "Product Name";
                         ProductList.HeaderRow.Cells[3].Text = "Manufacturer Name";
                         ProductList.HeaderRow.Cells[4].Text = "Category";
-                        ProductList.HeaderRow.Cells[5].Text = "Price";
-                        ProductList.HeaderRow.Cells[6].Text = "Quantity";
+                        ProductList.HeaderRow.Cells[5].Text = "Quantity";
+                        ProductList.HeaderRow.Cells[6].Text = "Price";
                 }
 
                 private void GetCategories()
@@ -70,15 +70,16 @@ namespace Online_Supermarket.Views.Admin
                                 else
                                 {
                                         string PName = PNameTb.Value;
-                                        int PManufact = int.Parse(PManufactCb.SelectedValue);
+                                        string PManufact = PManufactCb.SelectedValue.ToString();
                                         int PCate = int.Parse(PCateCb.SelectedValue);
 
-                                        int PPrice = Convert.ToInt32(PPriceTb.Value);
                                         int PQty = Convert.ToInt32(PQtyTb.Value);
+                                        int PPrice = Convert.ToInt32(PPriceTb.Value);
+                                        
 
 
                                         string Query = "insert into ProductTb1 values('{0}','{1}','{2}','{3}','{4}')";
-                                        Query = string.Format(Query, PName, PManufact, PCate, PPrice, PQty);
+                                        Query = string.Format(Query, PName, PManufact, PCate, PQty, PPrice);
                                         Con.SetData(Query);
                                         ShowProducts();
                                         ErrMsg.Text = "Product infomations has been added";
@@ -134,7 +135,7 @@ namespace Online_Supermarket.Views.Admin
 
 
                                         string Query = "update ProductTb1 set PName='{0}', PManufact='{1}',PCategory='{2}',PQty='{3}',PPrice='{4}' where Pid={5}";
-                                        Query = string.Format(Query, PName, PManufact, PCate, PPrice, PQty, ProductList.SelectedRow.Cells[1].Text);
+                                        Query = string.Format(Query, PName, PManufact, PCate, PQty, PPrice, ProductList.SelectedRow.Cells[1].Text);
                                         Con.SetData(Query);
                                         ShowProducts();
                                         ErrMsg.Text = "Product infomations has been updated";

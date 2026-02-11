@@ -5,6 +5,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Web;
+using System.Configuration;
+
 
 namespace Online_Supermarket.Models
 {
@@ -17,7 +19,8 @@ namespace Online_Supermarket.Models
                 private string ConStr;
                 public Functions()
                 {
-                        ConStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\huoyi\\OneDrive\\Desktop\\Supermarket\\Online SuperMarket\\Online Supermarket\\App_Data\\SupermarketDb.mdf\";Integrated Security=True";
+                        ConStr = ConfigurationManager.ConnectionStrings["SupermarketDbConn"].ConnectionString;
+                        //ConStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\huoyi\\OneDrive\\Desktop\\Supermarket\\Online SuperMarket\\Online Supermarket\\App_Data\\SupermarketDb.mdf\";Integrated Security=True";
                         _connection = new SqlConnection(ConStr);
                         _command = new SqlCommand();
                         _command.Connection = _connection;
